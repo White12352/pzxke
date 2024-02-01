@@ -234,8 +234,7 @@ public class Setting {
     }
 
     public static boolean getUpdate() {
-        //return Prefers.getBoolean("update", true);
-        return false;
+        return Prefers.getBoolean("update", true);
     }
 
     public static void putUpdate(boolean update) {
