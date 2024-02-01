@@ -69,7 +69,7 @@ public class Updater implements Download.Callback {
     }
 
     public void start(Activity activity) {
-        App.execute(() -> doInBackground(activity));
+        //App.execute(() -> doInBackground(activity));
     }
 
     private boolean need(int code, String name) {
@@ -89,12 +89,12 @@ public class Updater implements Download.Callback {
     }
 
     private void show(Activity activity, String version, String desc) {
-        binding = DialogUpdateBinding.inflate(LayoutInflater.from(activity));
-        binding.version.setText(ResUtil.getString(R.string.update_version, version));
-        binding.confirm.setOnClickListener(this::confirm);
-        binding.cancel.setOnClickListener(this::cancel);
-        check().create(activity).show();
-        binding.desc.setText(desc);
+        //binding = DialogUpdateBinding.inflate(LayoutInflater.from(activity));
+        //binding.version.setText(ResUtil.getString(R.string.update_version, version));
+        //binding.confirm.setOnClickListener(this::confirm);
+        //binding.cancel.setOnClickListener(this::cancel);
+        //check().create(activity).show();
+        //binding.desc.setText(desc);
     }
 
     private AlertDialog create(Activity activity) {
