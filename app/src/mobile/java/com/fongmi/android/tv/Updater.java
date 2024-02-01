@@ -70,7 +70,7 @@ public class Updater implements Download.Callback {
     }
 
     public void start(Activity activity) {
-        App.execute(() -> doInBackground(activity));
+        //App.execute(() -> doInBackground(activity));
     }
 
     private boolean need(int code, String name) {
@@ -90,11 +90,11 @@ public class Updater implements Download.Callback {
     }
 
     private void show(Activity activity, String version, String desc) {
-        binding = DialogUpdateBinding.inflate(LayoutInflater.from(activity));
-        check().create(activity, ResUtil.getString(R.string.update_version, version)).show();
-        dialog.getButton(DialogInterface.BUTTON_POSITIVE).setOnClickListener(this::confirm);
-        dialog.getButton(DialogInterface.BUTTON_NEGATIVE).setOnClickListener(this::cancel);
-        binding.desc.setText(desc);
+        //binding = DialogUpdateBinding.inflate(LayoutInflater.from(activity));
+        //check().create(activity, ResUtil.getString(R.string.update_version, version)).show();
+        //dialog.getButton(DialogInterface.BUTTON_POSITIVE).setOnClickListener(this::confirm);
+        //dialog.getButton(DialogInterface.BUTTON_NEGATIVE).setOnClickListener(this::cancel);
+        //binding.desc.setText(desc);
     }
 
     private AlertDialog create(Activity activity, String title) {
